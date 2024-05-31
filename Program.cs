@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-//modificação teste
+
 app.UseAuthorization();
 
 app.MapControllers();
