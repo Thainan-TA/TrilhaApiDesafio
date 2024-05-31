@@ -13,7 +13,7 @@ A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para imple
 
 A sua classe principal, a classe de tarefa, deve ser a seguinte:
 
-![Diagrama da classe Tarefa](diagrama.png)
+![Diagrama da classe Tarefa](Imagens/diagrama.png)
 
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
@@ -24,7 +24,7 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 **Swagger**
 
 
-![Métodos Swagger](18.png)
+![Métodos Swagger](Imagens/18.png)
 
 
 **Endpoints**
@@ -58,67 +58,67 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 
 
 **ObterPorId (GET /Tarefa/{id}):**
-![ObterPorId](15.png)
+![ObterPorId](Imagens/15.png)
 
-![ObterPorId](16.png)
+![ObterPorId](Imagens/16.png)
 
 Busca a tarefa pelo ID. Se não for encontrada, retorna NotFound(). Caso contrário, retorna a tarefa com Ok(tarefa).
 
 **ObterTodos (GET /Tarefa/ObterTodos):**
 
-![ObterTodos](3.png)
+![ObterTodos](Imagens/3.png)
 
 Retorna todas as tarefas presentes no banco de dados com Ok(tarefas).
 
 **ObterPorTitulo (GET /Tarefa/ObterPorTitulo):**
 
-![ObterPorTitulo](4.png)
+![ObterPorTitulo](Imagens/4.png)
 
-![ObterPorTitulo](5.png)
+![ObterPorTitulo](Imagens/5.png)
 
-![ObterPorTitulo](6.png)
+![ObterPorTitulo](Imagens/6.png)
 
-![ObterPorTitulo](7.png)
+![ObterPorTitulo](Imagens/7.png)
 
 Busca as tarefas que contêm o título fornecido. Usa Contains para a pesquisa e retorna a lista com Ok(tarefas).
 
 **ObterPorData (GET /Tarefa/ObterPorData):**
 
-![ObterPorData](8.png)
+![ObterPorData](Imagens/8.png)
 
-![ObterPorData](9.png)
+![ObterPorData](Imagens/9.png)
 
-![ObterPorData](10.png)
+![ObterPorData](Imagens/10.png)
 
 Filtra as tarefas pela data específica e retorna a lista.
 
 **ObterPorStatus (GET /Tarefa/ObterPorStatus):**
 
-![ObterPorStatus](11.png)
+![ObterPorStatus](Imagens/11.png)
 
-![ObterPorStatus](12.png)
+![ObterPorStatus](Imagens/12.png)
 
 Filtra as tarefas pelo status fornecido e retorna a lista.
 
 **Criar (POST /Tarefa):**
 
-![Criar](1.png)
+![Criar](Imagens/1.png)
 
-![Criar](2.png)
+![Criar](Imagens/2.png)
 
 Adiciona uma nova tarefa ao banco de dados. Se a data for inválida, retorna um erro. Caso contrário, adiciona a tarefa e salva as mudanças, retornando a tarefa criada com CreatedAtAction.
 
 **Atualizar (PUT /Tarefa/{id}):**
 
-![Atualizar](13.png)
+![Atualizar](Imagens/13.png)
 
-![Atualizar](14.png)
+![Atualizar](Imagens/14.png)
 
 Atualiza uma tarefa existente. Verifica se a tarefa existe e se a data é válida. Atualiza as propriedades da tarefa e salva as mudanças.
 
 **Deletar (DELETE /Tarefa/{id}):**
 
-![Deletar](17.png)
+![Deletar](Imagens/17.png)
 
 Remove uma tarefa pelo ID. Se não for encontrada, retorna NotFound(). Caso contrário, remove a tarefa e salva as mudanças, retornando NoContent().
 
